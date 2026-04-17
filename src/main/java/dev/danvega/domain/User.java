@@ -1,5 +1,8 @@
 package dev.danvega.domain;
 
+import dev.danvega.domain.User;
+import dev.danvega.service.UserService;
+import dev.danvega.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,8 +11,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.*;
 
-@Entity
 @Data
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
