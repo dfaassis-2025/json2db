@@ -6,14 +6,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.3</version>
+		<version>3.5.13</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.therealdanvega</groupId>
-	<artifactId>jsontodb</artifactId>
+	<artifactId>Json2db</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>jsontodb</name>
+	<name>Json2db</name>
 	<description>Reading JSON and writing to a DB</description>
 	<properties>
 		<java.version>25</java.version>

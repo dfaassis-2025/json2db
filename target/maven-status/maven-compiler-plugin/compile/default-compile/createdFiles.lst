@@ -1,9 +1,9 @@
 dev\danvega\domain\User.class
 dev\danvega\repository\UserRepository.class
 dev\danvega\service\UserService.class
-dev\danvega\JsontodbApplication$1.class
+dev\danvega\Json2dbApplication.class
 dev\danvega\controller\UserController.class
 dev\danvega\domain\Geo.class
-dev\danvega\JsontodbApplication.class
 dev\danvega\domain\Company.class
 dev\danvega\domain\Address.class
+dev\danvega\Json2dbApplication$1.class

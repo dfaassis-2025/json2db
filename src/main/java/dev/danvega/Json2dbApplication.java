@@ -16,20 +16,20 @@ import java.io.InputStream;
 import java.util.List;
 
 @SpringBootApplication
-public class JsontodbApplication {
+public class Json2dbApplication {
 
 	@SuppressWarnings("unused")
 	private final UserService userService;
     @SuppressWarnings("unused")
 	private final UserController userController;
 
-    JsontodbApplication(UserController userController, UserService userService) {
+    Json2dbApplication(UserController userController, UserService userService) {
         this.userController = userController;
         this.userService = userService;
     }
 
     public static void main(String[] args) {
-		SpringApplication.run(JsontodbApplication.class, args);
+		SpringApplication.run(Json2dbApplication.class, args);
 	}
 
 	@SuppressWarnings("null")
