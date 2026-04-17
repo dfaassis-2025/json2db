@@ -2,12 +2,17 @@ package dev.danvega.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.*;
 
+@Entity
 @Data
 @AllArgsConstructor
-@Entity
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
 
     @Id
@@ -24,8 +29,12 @@ public class User {
     @Embedded
     private Company company;
 
-    public User() {}
-
+    public Long getId() {
+        return id;
+    }
+    public String getName() {
+        return name;
+    }
     public String getCity() {
         return address.getCity();
     }
@@ -79,6 +88,13 @@ public class User {
 
     public void setWebsite(String website) {
         this.website = website;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
     
